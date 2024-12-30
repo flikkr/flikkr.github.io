@@ -139,7 +139,7 @@ export const DATA = {
           icon: <Icons.telegram className='size-3' />,
         },
       ],
-      image: "/scamhunt-site.png",
+      image: "/scamhunt-site.jpeg",
       video: "",
     },
   ],
