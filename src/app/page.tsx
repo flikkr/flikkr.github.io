@@ -195,6 +195,13 @@ export default function Page() {
         </div>
       </section>
       <ContactCard />
+      <footer>
+        <div className='flex flex-col items-center justify-center text-center mb-10 sm:mb-0'>
+          <p>
+            Last updated: {process.env.NEXT_PUBLIC_LAST_UPDATED_TIME ?? "N/A"}
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
