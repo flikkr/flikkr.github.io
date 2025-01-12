@@ -4,15 +4,15 @@ import { HomeIcon, NotebookIcon, CodeIcon } from "lucide-react";
 export const DATA = {
   name: "Kazymir Rabier",
   initials: "KR",
-  url: "https://dillion.io",
+  url: "https://flikkr.github.io",
   location: "Singapore",
   locationLink: "https://www.google.com/maps/place/singapore",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "A software engineer that loves to build cool stuff on web and mobile",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. " +
-    "In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons).\n" +
-    "I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "Started working in tech since 2020 after completing my degree in [Computer Science](/#education). " +
+    "Joined [Grab](https://grab.com)—Southeast Asia's leading superapp—as an Android engineer on the [GrabDefence](https:/defence.grab.com) team " +
+    "where I worked on strengthening Grab's ecosystem against fraud 💪🏻",
   avatarUrl: "/me.jpeg",
   skills: [
     "Flutter",
@@ -30,7 +30,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
     { href: "/projects", icon: CodeIcon, label: "Projects" },
   ],
   contact: {
@@ -54,11 +54,11 @@ export const DATA = {
         icon: Icons.x,
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
-        url: "#",
+        url: "#contact",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
     },
   },
@@ -67,26 +67,27 @@ export const DATA = {
     {
       company: "Grab",
       href: "https://grab.com",
-      badges: [],
+      badges: ["C++", "Android", "Python", "SQL"],
       location: "Singapore",
       title: "Senior Software Engineer",
       logoUrl: "/grab.jpeg",
       start: "April 2022",
       end: "Present",
-      description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+      description: "",
     },
     {
-      company: "RIMM Sustainability",
+      company: "RIMM",
       href: "https://rimm.io/",
-      badges: [],
+      badges: ["OutSystems", "Web", "SQL"],
       location: "Singapore",
       title: "Software Engineer",
       logoUrl: "/rimm.jpeg",
       start: "October 2020",
       end: "March 2022",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "I was hired as the first developer and developed the MVP and first version of RIMM, a sustainability reporting platform, from the ground up." +
+        "I led the hiring of several key staff members and was responsible for establishing early engineering guidelines and best practices." +
+        "",
     },
   ],
   education: [
