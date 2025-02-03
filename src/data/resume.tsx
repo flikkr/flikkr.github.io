@@ -11,7 +11,7 @@ export const DATA = {
     "A software engineer that loves to build cool stuff on web and mobile",
   summary:
     "Started working in tech since 2020 after completing my degree in [Computer Science](/#education). " +
-    "Joined [Grab](https://grab.com)—Southeast Asia's leading superapp—as an Android engineer on the [GrabDefence](https:/defence.grab.com) team " +
+    "Joined [Grab](https://grab.com)—Southeast Asia's leading superapp—as an Android engineer on the [GrabDefence](https://defence.grab.com) team " +
     "where I worked on strengthening Grab's ecosystem against fraud 💪🏻",
   avatarUrl: "/me.jpeg",
   skills: [
@@ -19,38 +19,41 @@ export const DATA = {
     "Android",
     "React",
     "Next.js",
-    "Typescript",
     "Node.js",
-    "Postgres",
     "Firebase",
-    "Python",
+    "Postgres",
     "Docker",
+    "Typescript",
+    "Python",
     "Java",
+    "Kotlin",
     "C++",
+    "Java Native Interface (JNI)",
+    "OutSystems",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    // { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/projects", icon: CodeIcon, label: "Projects" },
+    // { href: "/projects", icon: CodeIcon, label: "Projects" },
   ],
   contact: {
     email: "kazymir.rabier@gmail.com",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://dub.sh/kaz-github",
         icon: Icons.github,
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://dub.sh/kaz-linkedin",
         icon: Icons.linkedin,
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://dub.sh/kaz-x",
         icon: Icons.x,
         navbar: true,
       },
@@ -67,18 +70,19 @@ export const DATA = {
     {
       company: "Grab",
       href: "https://grab.com",
-      badges: ["C++", "Android", "Python", "SQL"],
+      badges: ["C++", "Java", "Kotlin", "Android", "Python", "SQL", "JNI"],
       location: "Singapore",
       title: "Senior Software Engineer",
       logoUrl: "/grab.jpeg",
       start: "April 2022",
       end: "Present",
-      description: "",
+      description:
+        "Joined the [GrabDefence](https://defence.grab.com) team to ideate, design, and implement cutting edge solutions for Guardian, a device intelligence SDK capable of detecting risk signals to convert into actionable measures.",
     },
     {
       company: "RIMM",
       href: "https://rimm.io/",
-      badges: ["OutSystems", "Web", "SQL"],
+      badges: ["OutSystems", "Javascript", "MSSQL"],
       location: "Singapore",
       title: "Software Engineer",
       logoUrl: "/rimm.jpeg",
@@ -107,8 +111,8 @@ export const DATA = {
       dates: "Sep 2024 - Dec 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: ["Typescript", "Next.js", "Postgres", "Refine.dev"],
+        "To complement the ScamHunt Telegram bot, I built an admin dashboard to allow authorities to view reports and insights.",
+      technologies: ["Typescript", "Next.js", "Supabase", "Refine.dev"],
       links: [
         {
           type: "Website",
@@ -125,22 +129,56 @@ export const DATA = {
       dates: "Sep 2024 - Dec 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: ["Python", "Telegram API", "OpenAI", "Postgres", "Docker"],
+        "ScamHunt is a Telegram bot that allows users to report scams and help authorities get insights into the latest scams using AI. " +
+        "It is built with Python and uses the Telegram API to send and receive messages.",
+      technologies: ["Python", "OpenAI", "Postgres"],
       links: [
         {
           type: "Website",
           href: "https://scamhunt.sg",
           icon: <Icons.globe className='size-3' />,
         },
-
         {
           type: "Telegram",
           href: "https://telegram.scamhunt.sg",
           icon: <Icons.telegram className='size-3' />,
         },
+        {
+          type: "About",
+          href: "https://www.build.gov.sg/scamhunt/",
+          icon: <Icons.externalLink className='size-3' />,
+        },
       ],
       image: "/scamhunt-site.jpeg",
+      video: "",
+    },
+    {
+      title: "Ivan Polunin Archives",
+      href: "https://ivanpolunin.com",
+      dates: "January 2023 - Present",
+      active: true,
+      description:
+        "Although not a tech-heavy project, I build a website and social media presence for my late grandgather, Ivan Polunin, " +
+        "a medical doctor who moved to Singapore in the 1940s and dedicated his life to perserving Southeast Asian history through photography and film.",
+      technologies: ["Wix", "Javascript", "CSS", "Social Media"],
+      links: [
+        {
+          type: "Website",
+          href: "https://ivanpolunin.com",
+          icon: <Icons.globe className='size-3' />,
+        },
+        {
+          type: "Instagram",
+          href: "https://www.instagram.com/ivanpoluninarchives/",
+          icon: <Icons.instagram />,
+        },
+        {
+          type: "Facebook",
+          href: "https://www.facebook.com/profile.php?id=100090217056500&notif_id=1737959999291976&notif_t=page_user_activity",
+          icon: <Icons.facebook />,
+        },
+      ],
+      image: "/ivan-polunin-site.png",
       video: "",
     },
   ],

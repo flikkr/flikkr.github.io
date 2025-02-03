@@ -67,10 +67,10 @@ export default function RootLayout({
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
-        <script
+        {/* <script
           async
           src='https://scripts.simpleanalyticscdn.com/latest.js'
-        ></script>
+        ></script> */}
       </body>
     </html>
   );

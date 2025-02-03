@@ -8,6 +8,13 @@ import { motion } from "framer-motion";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import dynamic from "next/dynamic";
+
+// Dynamically import Markdown component with no SSR
+const Markdown = dynamic(() => import("react-markdown"), {
+  ssr: false,
+  loading: () => <p className='animate-pulse'>Loading...</p>,
+});
 
 interface ResumeCardProps {
   logoUrl: string;
@@ -58,7 +65,7 @@ export const ResumeCard = ({
         <div className='flex-grow ml-4 items-center flex-col group'>
           <CardHeader>
             <div className='flex items-center justify-between gap-x-2 text-base'>
-              <h3 className='inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm'>
+              <h3 className='inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm mb-2'>
                 {title}
                 {badges && (
                   <div className='flex flex-wrap gap-1 ml-2'>
@@ -80,7 +87,7 @@ export const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className='text-xs sm:text-sm tabular-nums text-muted-foreground text-right'>
+              <div className='text-xs sm:text-sm tabular-nums text-muted-foreground text-right whitespace-nowrap'>
                 {period}
               </div>
             </div>
@@ -91,7 +98,6 @@ export const ResumeCard = ({
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
@@ -100,7 +106,9 @@ export const ResumeCard = ({
               }}
               className='mt-2 text-xs sm:text-sm'
             >
-              {description}
+              <div className='prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert'>
+                <Markdown>{description}</Markdown>
+              </div>
             </motion.div>
           )}
         </div>
