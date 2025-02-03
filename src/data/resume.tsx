@@ -184,18 +184,17 @@ export const DATA = {
   ],
   hackathons: [
     {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
+      title: "Build For Good Hackathon",
+      dates: "August 28th - September 28th, 2024",
+      location: "Singapore",
       description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
+        "Developed a Telegram bot and admin dashboard to help people detect scams and provide authorities with insights.",
+      image: "https://www.tech.gov.sg/images/technews/BFG_600x300.png",
       links: [
         {
-          title: "Github",
-          icon: <Icons.github className='h-4 w-4' />,
-          href: "https://github.com/cryptotrends/cryptotrends",
+          title: "Website",
+          icon: <Icons.globe className='h-4 w-4' />,
+          href: "https://www.build.gov.sg/",
         },
       ],
     },
