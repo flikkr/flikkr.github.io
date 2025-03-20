@@ -106,6 +106,42 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Tripweaver",
+      href: "#",
+      dates: "Coming 2025",
+      active: true,
+      description:
+        "Tripweaver is a travel planning app that allows users to plan their trips and share them with their friends.",
+      technologies: ["Mobile", "Flutter", "Supabase", "Firebase"],
+      links: [
+        {
+          type: "Coming Soon",
+          href: "#",
+          icon: <Icons.globe className='size-3' />,
+        },
+      ],
+      image: "/tripweaver.png",
+      video: "",
+    },
+    {
+      title: "Flutter Detect App",
+      href: "#",
+      dates: "Coming 2025",
+      active: true,
+      description:
+        "Flutter Detect is a mobile app to detect apps installed on your device that are running Flutter. It disassembles APK files and checks the bytecode to determine if it is a Flutter app, all during runtime.",
+      technologies: ["Mobile", "Flutter"],
+      links: [
+        {
+          type: "Coming Soon",
+          href: "#",
+          icon: <Icons.globe className='size-3' />,
+        },
+      ],
+      image: "/flutter.png",
+      video: "",
+    },
+    {
       title: "ScamHunt Admin Dashboard",
       href: "https://admin.scamhunt.sg",
       dates: "Sep 2024 - Dec 2024",
@@ -181,20 +217,63 @@ export const DATA = {
       image: "/ivan-polunin-site.png",
       video: "",
     },
+    {
+      title: "Clini-Hub",
+      href: "https://clini-hub.com",
+      dates: "May 2021 - June 2021",
+      active: true,
+      description:
+        "Developed a prototype of a web-based platform for patient monitoring and management using Flutter. ",
+      technologies: ["Flutter", "Firebase"],
+      links: [
+        {
+          type: "Website",
+          href: "https://clini-hub.com",
+          icon: <Icons.globe className='size-3' />,
+        },
+      ],
+      image: "/clinihub.png",
+      video: "",
+    },
   ],
   hackathons: [
+    {
+      title: "Money FM 89.3 Appearance",
+      dates: "March 2025",
+      location: "Singapore",
+      description:
+        "I was invited to appear on Money FM 89.3 to discuss my work on ScamHunt.",
+      image: "/moneyfm.png",
+      links: [],
+    },
+    {
+      title: "Open Tech Camp",
+      dates: "February 17th, 2025",
+      location: "Penang, Malaysia",
+      description:
+        "I was invited to speak at the Open Tech Camp in Penang, Malaysia. " +
+        "I spoke about my work on ScamHunt and how AI can help in the fight against scams.",
+      image: "/engagemedia.jpg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className='h-4 w-4' />,
+          href: "https://www.apc.org/en/event/open-tech-camp-2025",
+        },
+      ],
+    },
     {
       title: "Build For Good Hackathon",
       dates: "August 28th - September 28th, 2024",
       location: "Singapore",
       description:
-        "Developed a Telegram bot and admin dashboard to help people detect scams and provide authorities with insights.",
+        "Developed a Telegram bot and admin dashboard to help people detect scams and provide authorities with insights. Awarded $5,000 SGD to pursue the idea.",
       image: "https://www.tech.gov.sg/images/technews/BFG_600x300.png",
       links: [
         {
           title: "Website",
           icon: <Icons.globe className='h-4 w-4' />,
-          href: "https://www.build.gov.sg/",
+          href: "https://www.build.gov.sg/scamhunt/",
         },
       ],
     },

@@ -43,8 +43,9 @@ export function ContactCard() {
           <p className='mb-4'>
             Whether you have a project in mind, are looking for a collaborator,
             or simply want to chat about the latest tech trends, I&apos;d love
-            to hear from you. Let&apos;s discuss how we can work together to
-            bring your vision to life.
+            to hear from you. Additionally, I am open to being hired for projects
+            that align with my skills and interests. Let&apos;s discuss how we can
+            work together to bring your vision to life.
           </p>
 
           <form onSubmit={handleFormSubmit} className='flex flex-col gap-4'>
