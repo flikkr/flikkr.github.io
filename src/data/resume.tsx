@@ -244,7 +244,13 @@ export const DATA = {
       description:
         "I was invited to appear on Money FM 89.3 to discuss my work on ScamHunt.",
       image: "/moneyfm.png",
-      links: [],
+      links: [
+        {
+          title: "Spotify",
+          icon: <Icons.spotify className='h-4 w-4' />,
+          href: "https://open.spotify.com/episode/29badZ8o8mVY4BEj5ZD2Bk?si=BBr25IeHSHyMwzImT621cQ",
+        },
+      ],
     },
     {
       title: "Open Tech Camp",
