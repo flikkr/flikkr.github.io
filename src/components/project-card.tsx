@@ -26,6 +26,7 @@ interface Props {
     href: string;
   }[];
   className?: string;
+  imageClassName?: string;
 }
 
 export function ProjectCard({
@@ -39,6 +40,7 @@ export function ProjectCard({
   video,
   links,
   className,
+  imageClassName,
 }: Props) {
   return (
     <Card
@@ -66,7 +68,15 @@ export function ProjectCard({
             alt={title}
             width={500}
             height={300}
-            className='h-40 w-full overflow-hidden object-cover object-top'
+            className={cn(
+              "h-40 w-full overflow-hidden object-center transition-all duration-300 ease-out",
+              (image.endsWith(".svg") ||
+                image.includes("logo") ||
+                image.includes("flutter") ||
+                image.includes("tripweaver")) &&
+                "object-contain p-4 bg-white",
+              imageClassName,
+            )}
           />
         )}
       </Link>

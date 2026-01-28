@@ -108,7 +108,7 @@ export const DATA = {
     {
       title: "Tripweaver",
       href: "#",
-      dates: "Coming 2025",
+      dates: "Coming 2026",
       active: true,
       description:
         "Tripweaver is a travel planning app that allows users to plan their trips and share them with their friends.",
@@ -124,23 +124,41 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Flutter Detect App",
-      href: "#",
-      dates: "Coming 2025",
+      title: "NodeFlair Scraper",
+      href: "https://apify.com/musang_labs/nodeflair-scraper",
+      dates: "January 2026",
       active: true,
       description:
-        "Flutter Detect is a mobile app to detect apps installed on your device that are running Flutter. It disassembles APK files and checks the bytecode to determine if it is a Flutter app, all during runtime.",
-      technologies: ["Mobile", "Flutter"],
+        "Learned about Apify and decided to try and build my own scraper for scraping jobs listed on NodeFlair.",
+      technologies: ["Apify SDK", "Node.js", "Typescript", "Playwright"],
       links: [
         {
-          type: "Coming Soon",
-          href: "#",
+          type: "Apify Link",
+          href: "https://apify.com/musang_labs/nodeflair-scraper",
           icon: <Icons.globe className='size-3' />,
         },
       ],
-      image: "/flutter.png",
+      image: "/apify.svg",
       video: "",
     },
+    // {
+    //   title: "Flutter Detect App",
+    //   href: "#",
+    //   dates: "Coming 2025",
+    //   active: false,
+    //   description:
+    //     "Flutter Detect is a mobile app to detect apps installed on your device that are running Flutter. It disassembles APK files and checks the bytecode to determine if it is a Flutter app, all during runtime.",
+    //   technologies: ["Mobile", "Flutter"],
+    //   links: [
+    //     {
+    //       type: "Coming Soon",
+    //       href: "#",
+    //       icon: <Icons.globe className='size-3' />,
+    //     },
+    //   ],
+    //   image: "/flutter.png",
+    //   video: "",
+    // },
     {
       title: "ScamHunt Admin Dashboard",
       href: "https://admin.scamhunt.sg",
